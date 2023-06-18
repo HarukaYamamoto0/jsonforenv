@@ -1,0 +1,18 @@
+{
+  "string": "value of a string",
+  "number": 42,
+  "boolean": true,
+  "array": [1, 2, 3],
+  "object": {
+    "key1": "value1",
+    "key2": "value2"
+  },
+  "nullValue": null,
+  "nestedObject": {
+    "nestedKey": "nested value",
+    "nestedArray": [true, false]
+  },
+  "unicode": "こんにちは世界",
+  "specialCharacters": "!@#$%^&*()",
+  "escapedString": "I am a \"quoted\" string."
+}
