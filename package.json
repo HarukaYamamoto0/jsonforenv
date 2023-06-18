@@ -1,0 +1,26 @@
+{
+  "name": "jsonforenv",
+  "version": "1.0.0",
+  "description": "a json reader for env",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HarukaYamamoto0/jsonforenv"
+  },
+  "files": "index.js",
+  "funding": "https://www.buymeacoffee.com/harukayamamoto",
+  "homepage": "https://github.com/HarukaYamamoto0/jsonforenv",
+  "bugs": "https://github.com/HarukaYamamoto0/jsonforenv/issues",
+  "author": "HarukaYamamoto0 <antonioalbert344@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "dotenv",
+    "json",
+    "dotjson",
+    "jsontoenv"
+  ]
+}
