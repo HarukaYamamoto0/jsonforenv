@@ -26,8 +26,6 @@ import jsonforenv from "jsonforenv";
 import express from "express";
 const app = express();
 
-// by default it looks for a config.json file
-// but you can pass a path to the json file
 jsonforenv();
 
 app.get("/", (req, res) => {
@@ -37,5 +35,9 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
   console.log("running server");
 });
-
 ```
+
+## Coisas a ter em mente
+- Ele por padrão procura por um arquivo `config.json`
+- Você pode passar como argumento um caminho para um arquivo `.json` diferente do padrão
+- No futuro eu espero adic
