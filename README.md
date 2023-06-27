@@ -1,9 +1,10 @@
 # jsonforenv
 
-Esse package é uma solução bem leve para pessoas que preferem usar um arquivo json em vez dos arquivo env, eu criei ele pois eu gosto bastante de criar bots para discord, e eu precisava que os valores do arquivo de configurações estivesse disponível para todo o projeto, mais era bem chato toda vez fazer uma gambiarra para conseguir importar um arquivo json no ecmascript.
+This package is a very lightweight solution for those who prefer to use a json file instead of env files, I created it because I really like creating bots for discord, and I needed the settings file values to be available for the whole project, but it was too much boring every time to make a kludge to be able to import a json file in ecmascript.
 
 ## Instalação
-Para fazer a instalação é bem simples, seque alguns exemplos abaixo:
+Installation is very simple, see some examples below:
+
 npm
 ```shell
 npm install jsonforenv
@@ -12,4 +13,29 @@ npm install jsonforenv
 yarn
 ```shell
 yarn add jsonforenv
+```
+
+pnpm
+```shell
+pnpm add jsonforenv
+```
+
+## Uso
+```js
+import jsonforenv from "jsonforenv";
+import express from "express";
+const app = express();
+
+// by default it looks for a config.json file
+// but you can pass a path to the json file
+jsonforenv();
+
+app.get("/", (req, res) => {
+  res.sendStatus(200);
+});
+
+app.listen(3000, () => {
+  console.log("running server");
+});
+
 ```
