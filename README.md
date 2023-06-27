@@ -24,7 +24,7 @@ pnpm
 pnpm add jsonforenv
 ```
 
-## Uso
+## Usage
 
 ```js
 import jsonforenv from "jsonforenv";
