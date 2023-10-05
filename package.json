@@ -1,0 +1,37 @@
+{
+	"name": "jsonforenv",
+	"version": "1.0.1",
+	"description": "Transform JSON into Environment Variables: jsonforenv - Simplifying Environment Variable Configuration",
+	"main": "index.js",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/HarukaYamamoto0/jsonforenv"
+	},
+	"files": [
+		"index.js",
+		"package.json"
+	],
+	"funding": "https://www.buymeacoffee.com/harukayamamoto",
+	"homepage": "https://github.com/HarukaYamamoto0/jsonforenv",
+	"bugs": "https://github.com/HarukaYamamoto0/jsonforenv/issues",
+	"author": "HarukaYamamoto0 <harukayamamotodev@gmail.com>",
+	"license": "MIT",
+	"keywords": [
+		"environment",
+		"configuration",
+		"dotenv",
+		"json-loader",
+		"Node.js",
+		"environment variables",
+		"JSON parsing",
+		"settings",
+		"setup",
+		"configuration management",
+		"utility",
+		"package",
+		"configuration loader",
+		"settings loader",
+		"config"
+	]
+}
