@@ -1,6 +1,6 @@
 {
 	"name": "jsonforenv",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"description": "Transform JSON into Environment Variables: jsonforenv - Simplifying Environment Variable Configuration",
 	"main": "index.js",
 	"type": "module",
@@ -10,8 +10,12 @@
 	},
 	"files": [
 		"index.js",
-		"package.json"
+		"package.json",
+		"LICENSE"
 	],
+	"scripts": {
+		"format": "npx prettier . --write"
+	},
 	"funding": "https://www.buymeacoffee.com/harukayamamoto",
 	"homepage": "https://github.com/HarukaYamamoto0/jsonforenv",
 	"bugs": "https://github.com/HarukaYamamoto0/jsonforenv/issues",

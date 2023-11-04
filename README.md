@@ -20,43 +20,45 @@ yarn add jsonforenv
 
 ## Usage
 
-First create a `.json` file, preferably in the root of your project
+First create a `.json` file, in the location you want.
 
 ```json
 {
-	"DATABASE_URL": "mongodb://localhost/mydb",
-	"SECRET_KEY": "mysecretkey",
-	"DEBUG_MODE": true
+  "DATABASE_URL": "mongodb://localhost/mydb",
+  "SECRET_KEY": "mysecretkey",
+  "DEBUG_MODE": true
 }
 ```
 
 import the library into your code:
 
 ```javascript
-import loadEnvironment from "jsonforenv";
+import { loadEnvFromFile, loadEnvFromFolder } from "jsonforenv";
 ```
 
-Then, call the `loadEnvironment` function passing the path to the JSON file that contains the environment variables:
+If you want to load just one configuration file, call the `loadEnvFromFile` function passing the path to the JSON file containing the environment variables:
 
 ```javascript
-loadEnvironment("path/to/your/config.json");
+loadEnvFromFile("path/to/your/config.json");
+```
+
+Now if you want to load several configuration files that are inside a folder, call the `loadEnvFromFolder` function passing the path to the folder containing the .json files:
+
+```javascript
+loadEnvFromFolder("path/to/your/folder");
 ```
 
 If the JSON file found is valid, the environment variables will be loaded based on the settings provided in the file, as in the example below:
 
 ```javascript
-import loadEnvironment from "jsonforenv";
-loadEnvironment("../../config.json");
+import { loadEnvFromFile } from "jsonforenv";
+loadEnvFromFile();
 
 console.log(process.env.DATABASE_URL); // mongodb://localhost/mydb
 console.log(process.env.SECRET_KEY); // mysecretkey
 ```
 
 ### FAQ
-
-#### Can it load multiple files?
-
-No, unless someone opens an issue asking me to implement ¯\_(ツ)\_/¯
 
 #### Does it throw errors?
 
@@ -66,10 +68,10 @@ Here is an example of how to catch errors when using `jsonforenv`:
 
 ```javascript
 try {
-	loadEnvironment("path/to/your/config.json");
+  loadEnvFromFile("path/to/your/config.json");
 } catch (error) {
-	console.error(error.message);
-	// Do something about the error if necessary
+  console.error(error.message);
+  // Do something about the error if necessary
 }
 ```
 
